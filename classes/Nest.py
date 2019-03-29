@@ -13,7 +13,7 @@ import sys
 class Nest:
     ''' Collects input from stdin '''
 
-    def _read_input_stdin(self):
+    def _read_input_from_stdin(self):
         ''' Read input information from stdin '''
 
         ## Reading input from stdin
@@ -67,7 +67,7 @@ class Nest:
         ''' Run, Nest. Run! '''
 
         ## Read input json formatted from stdin
-        input_data = self._read_input_stdin()
+        input_data = self._read_input_from_stdin()
 
         ## Instantiate an ArgumentParser object to deal with arguments
         parser = argparse.ArgumentParser(
